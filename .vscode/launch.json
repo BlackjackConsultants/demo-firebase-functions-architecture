@@ -15,6 +15,21 @@
       "request": "launch",
       "preLaunchTask": "npm: test",
       "url": "http://localhost:9876/debug.html"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Firebase Functions (9229)",
+      "port": 9229,
+      "address": "localhost",
+      "restart": true,
+      "protocol": "inspector",
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/functions/node_modules/**"
+      ],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/functions/lib/**/*.js"]
     }
   ]
 }
