@@ -44,6 +44,7 @@ Thumbs.db
 # Firebase
 .firebase/
 firestore-debug.log
+firebase-debug.log
 pubsub-debug.log
 
 # TypeScript
