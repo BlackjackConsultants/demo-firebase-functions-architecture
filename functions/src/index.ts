@@ -1,20 +1,9 @@
-import { onRequest, onCall } from "firebase-functions/v2/https";
-import logger from "firebase-functions/logger";
+import * as functions from "firebase-functions";
+import { createApp } from "./app";
 
-// Simple REST endpoint: GET or POST
-export const sum = onRequest({ region: "us-central1", cors: true }, (req, res) => {
-  const source = req.method === "GET" ? req.query : req.body;
-  const a = Number(source.a), b = Number(source.b);
-  if (Number.isNaN(a) || Number.isNaN(b)) {
-    res.status(400).json({ error: "Provide numeric a & b" });
-    return;
-  }
-  res.json({ sum: a + b, now: new Date().toISOString() });
-});
+// Choose region as needed
+const region = "us-central1";
 
-// Simple callable
-export const hello = onCall({ region: "us-central1" }, (req) => {
-  const name = (req.data?.name ?? "world") as string;
-  logger.info("hello called with", { name });
-  return { message: `Hello ${name}` };
-});
+export const api = functions
+  .region(region)
+  .https.onRequest(createApp());
