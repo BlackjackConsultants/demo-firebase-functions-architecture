@@ -20,6 +20,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/demo-firebase-functions-architecture",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"

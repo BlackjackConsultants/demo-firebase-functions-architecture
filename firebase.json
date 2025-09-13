@@ -41,7 +41,7 @@
     }
   ],
   "hosting": {
-    "public": "public",
+    "public": "dist/demo-firebase-functions-architecture/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

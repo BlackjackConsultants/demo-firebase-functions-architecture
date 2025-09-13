@@ -1,200 +1,34 @@
-[debug] [2025-09-13T21:02:29.182Z] ----------------------------------------------------------------------
-[debug] [2025-09-13T21:02:29.189Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --inspect-functions --project demo-app
-[debug] [2025-09-13T21:02:29.190Z] CLI Version:   14.16.0
-[debug] [2025-09-13T21:02:29.191Z] Platform:      win32
-[debug] [2025-09-13T21:02:29.191Z] Node Version:  v22.19.0
-[debug] [2025-09-13T21:02:29.193Z] Time:          Sat Sep 13 2025 17:02:29 GMT-0400 (Eastern Daylight Time)
-[debug] [2025-09-13T21:02:29.193Z] ----------------------------------------------------------------------
+[debug] [2025-09-13T23:48:55.608Z] ----------------------------------------------------------------------
+[debug] [2025-09-13T23:48:55.612Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --inspect-functions --project demo-app
+[debug] [2025-09-13T23:48:55.613Z] CLI Version:   14.16.0
+[debug] [2025-09-13T23:48:55.613Z] Platform:      win32
+[debug] [2025-09-13T23:48:55.613Z] Node Version:  v22.19.0
+[debug] [2025-09-13T23:48:55.614Z] Time:          Sat Sep 13 2025 19:48:55 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-09-13T23:48:55.614Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-09-13T21:02:30.821Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-09-13T21:02:30.823Z] > authorizing via signed-in user (jorgefranciscoperez99@gmail.com)
-[debug] [2025-09-13T21:02:31.462Z] java version "11.0.16.1" 2022-08-18 LTS
+[debug] [2025-09-13T23:48:56.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-13T23:48:56.026Z] > authorizing via signed-in user (jorgefranciscoperez99@gmail.com)
+[debug] [2025-09-13T23:48:56.220Z] java version "11.0.16.1" 2022-08-18 LTS
+[debug] [2025-09-13T23:48:56.221Z] 
 Java(TM) SE Runtime Environment 18.9 (build 11.0.16.1+1-LTS-1)
-[debug] [2025-09-13T21:02:31.464Z] 
 Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.16.1+1-LTS-1, mixed mode)
 
-[debug] [2025-09-13T21:02:31.548Z] Parsed Java major version: 11
+[debug] [2025-09-13T23:48:56.257Z] Parsed Java major version: 11
 [info] i  emulators: Starting emulators: auth, functions, firestore, hosting, pubsub, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, pubsub, storage, extensions"}}
 [info] i  emulators: Detected demo project ID "demo-app", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-app\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
-[debug] [2025-09-13T21:02:31.611Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.611Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.612Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.612Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.614Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.615Z] [pubsub] Pub/Sub Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.615Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.615Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2025-09-13T21:02:31.646Z] Emulator locator file path: C:\Users\jorge\AppData\Local\Temp\hub-demo-app.json
-[debug] [2025-09-13T21:02:31.647Z] [hub] writing locator at C:\Users\jorge\AppData\Local\Temp\hub-demo-app.json
-[debug] [2025-09-13T21:02:31.672Z] [Extensions] Started Extensions emulator, this is a noop.
-[debug] [2025-09-13T21:02:31.691Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.692Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.692Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-13T21:02:31.692Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2025-09-13T23:48:56.301Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.301Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.302Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.302Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.302Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.302Z] [pubsub] Pub/Sub Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.303Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.303Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-09-13T23:48:56.312Z] Emulator locator file path: C:\Users\jorge\AppData\Local\Temp\hub-demo-app.json
+[debug] [2025-09-13T23:48:56.312Z] [hub] writing locator at C:\Users\jorge\AppData\Local\Temp\hub-demo-app.json
+[debug] [2025-09-13T23:48:56.323Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-09-13T23:48:56.332Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.332Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.332Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-13T23:48:56.332Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
 [warn] !  functions: You are running the Functions emulator in debug mode. This means that functions will execute in sequence rather than in parallel. {"metadata":{"emulator":{"name":"functions"},"message":"You are running the Functions emulator in debug mode. This means that functions will execute in sequence rather than in parallel."}}
-[warn] !  functions: Application Default Credentials detected. Non-emulated services will access production using these credentials. Be careful! {"metadata":{"emulator":{"name":"functions"},"message":"Application Default Credentials detected. Non-emulated services will access production using these credentials. Be careful!"}}
-[warn] !  firestore: Cloud Firestore Emulator does not support multiple databases yet. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore Emulator does not support multiple databases yet."}}
-[warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
-[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
-[debug] [2025-09-13T21:02:49.869Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2025-09-13T21:02:49.869Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
-[debug] [2025-09-13T21:02:49.870Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\jorge\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","demo-app","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\jorge\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"demo-app\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
-[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
-[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
-[debug] [2025-09-13T21:03:04.190Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2025-09-13T21:03:04.191Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2025-09-13T21:03:04.191Z] Starting Pub/Sub Emulator with command {"binary":"C:\\Users\\jorge\\.cache\\firebase\\emulators\\pubsub-emulator-0.8.14\\pubsub-emulator\\bin\\cloud-pubsub-emulator","args":["--host=127.0.0.1","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true,"shell":true,"port":8085} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"C:\\\\Users\\\\jorge\\\\.cache\\\\firebase\\\\emulators\\\\pubsub-emulator-0.8.14\\\\pubsub-emulator\\\\bin\\\\cloud-pubsub-emulator\",\"args\":[\"--host=127.0.0.1\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true,\"shell\":true,\"port\":8085}"}}
-[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
-[info] i  storage: Detected demo project ID "demo-app", using a default (open) rules configuration. {"metadata":{"emulator":{"name":"storage"},"message":"Detected demo project ID \"demo-app\", using a default (open) rules configuration."}}
-[debug] [2025-09-13T21:03:06.696Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2025-09-13T21:03:08.222Z] Temp file directory for storage emulator: C:\Users\jorge\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\jorge\\AppData\\Local\\Temp/firebase/storage/blobs"}}
-[debug] [2025-09-13T21:03:08.235Z] Checked if tokens are valid: false, expires at: 1757797288661
-[debug] [2025-09-13T21:03:08.235Z] Checked if tokens are valid: false, expires at: 1757797288661
-[debug] [2025-09-13T21:03:08.236Z] > refreshing access token with scopes: []
-[debug] [2025-09-13T21:03:08.239Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2025-09-13T21:03:08.239Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-09-13T21:03:08.464Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2025-09-13T21:03:08.464Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-09-13T21:03:08.478Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/demo-app [none]
-[debug] [2025-09-13T21:03:08.852Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/demo-app 403
-[debug] [2025-09-13T21:03:08.852Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/demo-app {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
-[debug] [2025-09-13T21:03:08.853Z] Request to https://firebase.googleapis.com/v1beta1/projects/demo-app had HTTP Error: 403, The caller does not have permission
-[info] i  hosting[demo-app]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
-[info] +  hosting[demo-app]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
-[debug] [2025-09-13T21:03:08.887Z] [Extensions] Connecting Extensions emulator, this is a noop.
-[info] i  functions: Watching "C:\Users\jorge\OneDrive\jorgeprg\javascript\examples\demo-firebase-functions-architecture\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\" for Cloud Functions..."}}
-[debug] [2025-09-13T21:03:08.898Z] Validating nodejs source
-[debug] [2025-09-13T21:03:10.480Z] > [functions] package.json contents: {
-  "name": "functions",
-  "scripts": {
-    "lint": "eslint --ext .js,.ts .",
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "serve": "npm run build && firebase emulators:start --only functions",
-    "shell": "npm run build && firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "22"
-  },
-  "main": "lib/index.js",
-  "dependencies": {
-    "firebase-admin": "^12.6.0",
-    "firebase-functions": "^6.0.1"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.25.4",
-    "firebase-functions-test": "^3.1.0",
-    "typescript": "^5.7.3"
-  },
-  "private": true
-}
-[debug] [2025-09-13T21:03:10.480Z] Building nodejs source
-[debug] [2025-09-13T21:03:10.481Z] Failed to find version of module node: reached end of search path C:\Users\jorge\OneDrive\jorgeprg\javascript\examples\demo-firebase-functions-architecture\functions\node_modules
-[info] +  functions: Using node@22 from host. 
-[debug] [2025-09-13T21:03:10.485Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-09-13T21:03:10.500Z] Found firebase-functions binary at 'C:\Users\jorge\OneDrive\jorgeprg\javascript\examples\demo-firebase-functions-architecture\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8764
-
-[debug] [2025-09-13T21:03:11.423Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
-[warn] !  functions: Application Default Credentials detected. Non-emulated services will access production using these credentials. Be careful! {"metadata":{"emulator":{"name":"functions"},"message":"Application Default Credentials detected. Non-emulated services will access production using these credentials. Be careful!"}}
-[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/demo-app/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-app/us-central1/api)."}}
-[info] +  functions: Using debug port 9229 for functions codebase default {"metadata":{"emulator":{"name":"functions"},"message":"Using debug port 9229 for functions codebase default"}}
-[debug] [2025-09-13T21:03:15.514Z] [worker-pool] addWorker(~shared~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~shared~)"}}
-[debug] [2025-09-13T21:03:15.516Z] [worker-pool] Adding worker with key ~free~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~free~, total=1"}}
-[info] >  Debugger listening on ws://127.0.0.1:9229/4dfc01fc-39fb-46b6-9267-210ce15ae78c {"user":"Debugger listening on ws://127.0.0.1:9229/4dfc01fc-39fb-46b6-9267-210ce15ae78c\r","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Debugger listening on ws://127.0.0.1:9229/4dfc01fc-39fb-46b6-9267-210ce15ae78c\r"}}
-[info] >  For help, see: https://nodejs.org/en/docs/inspector {"user":"For help, see: https://nodejs.org/en/docs/inspector\r","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m For help, see: https://nodejs.org/en/docs/inspector\r"}}
-[debug] [2025-09-13T21:03:17.287Z] [runtime-status] [17272] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2025-09-13T21:03:17.289Z] [runtime-status] [17272] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-09-13T21:03:17.290Z] [runtime-status] [17272] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2025-09-13T21:03:17.291Z] [runtime-status] [17272] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-09-13T21:03:17.918Z] [runtime-status] [17272] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Checked functions.config() {\"config\":{}}"}}
-[debug] [2025-09-13T21:03:17.919Z] [runtime-status] [17272] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.4.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
-[debug] [2025-09-13T21:03:17.920Z] [runtime-status] [17272] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-09-13T21:03:17.931Z] [runtime-status] [17272] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
-[debug] [2025-09-13T21:03:17.935Z] [runtime-status] [17272] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.4.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.4.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
-[debug] [2025-09-13T21:03:17.936Z] [runtime-status] [17272] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
-[debug] [2025-09-13T21:03:18.186Z] [runtime-status] [17272] initializeApp(DEFAULT) {"storageBucket":"demo-app.appspot.com","databaseURL":"https://demo-app.firebaseio.com","projectId":"demo-app"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] initializeApp(DEFAULT) {\"storageBucket\":\"demo-app.appspot.com\",\"databaseURL\":\"https://demo-app.firebaseio.com\",\"projectId\":\"demo-app\"}"}}
-[debug] [2025-09-13T21:03:18.197Z] [runtime-status] [17272] Functions runtime initialized. {"cwd":"C:\\Users\\jorge\\OneDrive\\jorgeprg\\javascript\\examples\\demo-firebase-functions-architecture\\functions","node_version":"22.19.0"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\jorge\\\\OneDrive\\\\jorgeprg\\\\javascript\\\\examples\\\\demo-firebase-functions-architecture\\\\functions\",\"node_version\":\"22.19.0\"}"}}
-[debug] [2025-09-13T21:03:18.198Z] [runtime-status] [17272] Listening to port: \\?\pipe\fire_emu_2037f1191c8bc248 {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [17272] Listening to port: \\\\?\\pipe\\fire_emu_2037f1191c8bc248"}}
-[debug] [2025-09-13T21:03:18.280Z] [worker-~free~-9a330fb0-e89a-4363-83a8-87ca70feee1f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~free~-9a330fb0-e89a-4363-83a8-87ca70feee1f]: IDLE"}}
-[debug] [2025-09-13T21:03:18.285Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
-[info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://127.0.0.1:4000/               │
-└─────────────────────────────────────────────────────────────┘
-
-┌────────────────┬────────────────┬──────────────────────────────────┐
-│ Emulator       │ Host:Port      │ View in Emulator UI              │
-├────────────────┼────────────────┼──────────────────────────────────┤
-│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth       │
-├────────────────┼────────────────┼──────────────────────────────────┤
-│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
-├────────────────┼────────────────┼──────────────────────────────────┤
-│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
-├────────────────┼────────────────┼──────────────────────────────────┤
-│ Hosting        │ 127.0.0.1:5000 │ n/a                              │
-├────────────────┼────────────────┼──────────────────────────────────┤
-│ Pub/Sub        │ 127.0.0.1:8085 │ n/a                              │
-├────────────────┼────────────────┼──────────────────────────────────┤
-│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage    │
-├────────────────┼────────────────┼──────────────────────────────────┤
-│ Extensions     │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
-└────────────────┴────────────────┴──────────────────────────────────┘
-  Emulator Hub host: 127.0.0.1 port: 4400
-  Other reserved ports: 4500, 9150
-┌─────────────────────────┬───────────────┬─────────────────────┐
-│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
-└─────────────────────────┴───────────────┴─────────────────────┘
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET / HTTP/1.1" 200 - "http://127.0.0.1:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET / HTTP/1.1\" 200 - \"http://127.0.0.1:4000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.291Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-app-compat.js [none]
-[debug] [2025-09-13T21:06:50.300Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-auth-compat.js [none]
-[debug] [2025-09-13T21:06:50.305Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore-compat.js [none]
-[debug] [2025-09-13T21:06:50.308Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-database-compat.js [none]
-[debug] [2025-09-13T21:06:50.311Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-functions-compat.js [none]
-[debug] [2025-09-13T21:06:50.314Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-messaging-compat.js [none]
-[debug] [2025-09-13T21:06:50.410Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-messaging-compat.js 200
-[debug] [2025-09-13T21:06:50.411Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-messaging-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-messaging-compat.js HTTP/1.1" 200 9792 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-messaging-compat.js HTTP/1.1\" 200 9792 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.426Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-app-compat.js 200
-[debug] [2025-09-13T21:06:50.426Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-app-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-app-compat.js HTTP/1.1" 200 10151 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-app-compat.js HTTP/1.1\" 200 10151 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.441Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-auth-compat.js 200
-[debug] [2025-09-13T21:06:50.442Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-auth-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-auth-compat.js HTTP/1.1" 200 41518 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-auth-compat.js HTTP/1.1\" 200 41518 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.478Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-storage-compat.js [none]
-[debug] [2025-09-13T21:06:50.483Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics-compat.js [none]
-[debug] [2025-09-13T21:06:50.485Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore-compat.js 200
-[debug] [2025-09-13T21:06:50.486Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore-compat.js [stream]
-[debug] [2025-09-13T21:06:50.495Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-functions-compat.js 200
-[debug] [2025-09-13T21:06:50.495Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-functions-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-functions-compat.js HTTP/1.1" 200 5789 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-functions-compat.js HTTP/1.1\" 200 5789 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.508Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-remote-config-compat.js [none]
-[debug] [2025-09-13T21:06:50.524Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-performance-compat.js [none]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-firestore-compat.js HTTP/1.1" 200 106932 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-firestore-compat.js HTTP/1.1\" 200 106932 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.537Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-storage-compat.js 200
-[debug] [2025-09-13T21:06:50.537Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-storage-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-storage-compat.js HTTP/1.1" 200 14889 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-storage-compat.js HTTP/1.1\" 200 14889 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.555Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics-compat.js 200
-[debug] [2025-09-13T21:06:50.555Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-analytics-compat.js HTTP/1.1" 200 9062 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-analytics-compat.js HTTP/1.1\" 200 9062 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.563Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-database-compat.js 200
-[debug] [2025-09-13T21:06:50.563Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-database-compat.js [stream]
-[debug] [2025-09-13T21:06:50.568Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-remote-config-compat.js 200
-[debug] [2025-09-13T21:06:50.568Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-remote-config-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-remote-config-compat.js HTTP/1.1" 200 9133 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-remote-config-compat.js HTTP/1.1\" 200 9133 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[debug] [2025-09-13T21:06:50.588Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-performance-compat.js 200
-[debug] [2025-09-13T21:06:50.589Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/12.2.1/firebase-performance-compat.js [stream]
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-database-compat.js HTTP/1.1" 200 49852 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-database-compat.js HTTP/1.1\" 200 49852 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] "GET /__/firebase/12.2.1/firebase-performance-compat.js HTTP/1.1" 200 13613 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [13/Sep/2025:21:06:50 +0000] \"GET /__/firebase/12.2.1/firebase-performance-compat.js HTTP/1.1\" 200 13613 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\""}}
