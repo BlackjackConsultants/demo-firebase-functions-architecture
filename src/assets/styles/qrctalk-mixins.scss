@@ -1,0 +1,172 @@
+@import "./qrctalk-variables.scss";
+@import "./qrctalk-extends.scss";
+@import "./generic.scss";
+
+@mixin layout-content {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin layout-content-plugin {
+    display: grid;
+    grid-template-columns: 0 1fr 0;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+@mixin layout-room {
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+@mixin width-100-pct {
+    width: 100%;
+}
+
+@mixin width-height-100-pct {
+    width: 100%;
+    height: 100%;
+}
+
+// center-----------------------------------------------------------------------
+@mixin center-element-with-flex {
+    display: flex;
+    justify-content: center; /* Centers child horizontally */
+    align-items: center; /* Centers child vertically */
+}
+@mixin center-horizontally-element-with-flex {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin center-absolute-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin center-absolute-position-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+// border-----------------------------------------------------------------------
+@mixin round-corner-container {
+    border-radius: $borderRadius;
+}
+
+@mixin round-corner-left-container {
+    border-radius: $borderRadius;
+}
+
+@mixin round-corner-right-container {
+    border-radius: $borderRadius;
+}
+
+@mixin border-solid-1px {
+    border-width: 1px;
+    border-style: solid;
+}
+
+// solid border-----------------------------------------------------------------------
+@mixin solid-border {
+    border-style: solid;
+    border-width: 1px;
+}
+
+@mixin border-none {
+    border-style: none;
+    border-width: 0;
+}
+
+// flex mixings-----------------------------------------------------------------------
+@mixin item-take-all-space-left {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+@mixin item-normal-space {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+// text-----------------------------------------------------------------------
+@mixin text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// toolbar -------------
+
+@mixin toolbar-button {
+    @extend %button;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+@mixin toolbar-container {
+    height: 27px;
+    background-color: $contentToolbarBGC;
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    justify-content: space-between; /* Space between groups of elements */
+    gap: 10px; /* Adds space between the items */
+    padding: 0;
+    margin: 0;
+    direction: row;
+}
+
+@mixin toolbar-button-position-to-left {
+    /* order: 1; Need to set this value */
+    flex: 0 1 auto; /* Does not grow but takes only its content width */
+}
+
+@mixin toolbar-button-position-to-space {
+    /* order: 2; Need to set this value */
+    flex: 1 1 0%; /* Allows it to grow and take all the available space */
+}
+
+@mixin toolbar-button-position-to-right {
+    /* order: 3; Need to set this value */
+    flex: 0 1 auto; /* Do not grow beyond their content width */
+}
+
+// dialog -----------------------------------------------------------------------
+@mixin dialog-button {
+    @include round-corner-container;
+    @include border-none;
+    width: 120px;
+    height: 36px;
+    background-color: $roomButtonBGC;
+    color: $bodyBGC;
+    cursor: pointer;
+}
+
+// fonts
+@mixin app-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $inputElementFontSize;
+}
+
+// LI common-----------------------------------------------------------------------
+@mixin li-common {
+    list-style: none;
+}
+
+// INPUT common-----------------------------------------------------------------------
+@mixin input-common {
+    @include app-font;
+    height: 27px;
+    margin: 5px 0 0 0;
+}

@@ -1,0 +1,38 @@
+@import "./qrctalk-variables";
+
+%button {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: $buttonBorderRadius;
+    border-color: $buttonBorderColor;
+    padding: 7px;
+}
+
+%table-with-border {
+    border-radius: 20px;
+    border-collapse: unset;
+}
+
+%toolbar-button {
+    @extend %button;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+%card-button {
+    @extend %button;
+    background-color: $bodyBGC;
+    color: $bodyColor;
+    border-style: solid;
+    cursor: pointer;
+    font-family: $bodyFontFamily;
+    font-size: 16px;
+}
+
+%grid-button {
+    border-style: none;
+
+}
