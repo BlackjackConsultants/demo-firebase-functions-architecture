@@ -2,7 +2,6 @@ import { Component, Inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { environment } from '../../../environments/environment';
 import { FormsModule } from '@angular/forms';
-import { Analytics, logEvent } from '@angular/fire/analytics'
 
 @Component({
   selector: 'app-home',
@@ -17,13 +16,9 @@ export class HomeComponent {
   carLeaseNavParam = 'car-lease';
   carLoanNavParam = 'car-loan';
 
-  constructor(private analytics: Analytics) { }
 
   navigateHandler(value: string) {
-    logEvent(this.analytics, value, {
-      category: 'navigation',
-      value: 42,
-    });
+
   }
 
   navigateToHelp() {
