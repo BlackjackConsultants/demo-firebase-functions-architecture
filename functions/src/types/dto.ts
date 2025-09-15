@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 export const CreateUserDto = z.object({
+  id: z.string().min(1),
   email: z.string().email(),
   name: z.string().min(1)
 });

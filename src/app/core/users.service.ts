@@ -9,6 +9,11 @@ export interface User {
   name: string;
 }
 
+export interface CreateUser {
+  email: string;
+  name: string;
+}
+
 @Injectable({ providedIn: 'root' })
 export class UsersService {
   private baseUrl = `${environment.apiBaseUrl}/v1/users`;
@@ -17,5 +22,9 @@ export class UsersService {
 
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.baseUrl);
+  }
+
+  createUser(data: CreateUser): Observable<User> {
+    return this.http.post<User>(this.baseUrl, data);
   }
 }

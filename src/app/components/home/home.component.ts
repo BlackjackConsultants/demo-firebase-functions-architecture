@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { FormsModule } from '@angular/forms';
-import { UsersService, User } from '../../core/users.service';
+import { UsersService, User, CreateUser } from '../../core/users.service';
 
 @Component({
   selector: 'app-home',
@@ -36,5 +36,26 @@ export class HomeComponent {
   navigateToHelp() {
     const url = `${window.location.hostname}/assets/page/index.html`;
     window.location.href = `${window.location.hostname}/assets/page/index.html`;
+  }
+
+  addUserHandler() {
+    // Simple demo payload; in real UI you'd collect from a form
+    const payload: CreateUser = {
+      name: `User ${Date.now()}`,
+      email: `user${Math.floor(Math.random() * 10000)}@example.com`
+    };
+
+    this.usersService.createUser(payload).subscribe({
+      next: (created) => {
+        // Push into local list for quick feedback
+        this.users = [...this.users, created];
+        console.log('User created', created);
+        alert(`Created user: ${created.name}`);
+      },
+      error: (err) => {
+        console.error('Failed to create user', err);
+        alert('Failed to create user. See console for details.');
+      }
+    });
   }
 }
