@@ -1,13 +1,8 @@
 <div class="home-container">
     <div class="commands">
-        <button (click)="navigateHandler('split-pages')" class="navigate-buttons"
-            [routerLink]="['/content', splitPagesNavParam]">
+        <button (click)="getUsersHandler()">
+            Get User List
         </button>
-        <button (click)="navigateHandler('car-lease-calculator')" class="navigate-buttons"
-            [routerLink]="['/content', carLeaseNavParam]">
-        </button>
-        <button (click)="navigateHandler('car-loan-calculator')" class="navigate-buttons"
-            [routerLink]="['/content', carLoanNavParam]">
-        </button>
+
     </div>
 </div>
