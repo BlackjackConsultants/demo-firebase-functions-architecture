@@ -1,0 +1,23 @@
+@import "../../../styles.scss";
+
+.basic-crud-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+
+.commands {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: rgb(120, 120, 22);
+    height: 77px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
