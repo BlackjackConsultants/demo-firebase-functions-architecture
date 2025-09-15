@@ -54,7 +54,6 @@ export class HomeComponent {
       },
       error: (err) => {
         console.error('Failed to create user', err);
-        alert('Failed to create user. See console for details.');
       }
     });
   }

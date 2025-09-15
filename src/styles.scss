@@ -2,3 +2,11 @@
 @import "./assets/styles/qrctalk-variables.scss";
 @import "./assets/styles/qrctalk-mixins.scss";
 @import "./assets/styles/qrctalk-extends.scss";
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $bodyBGC;
+}

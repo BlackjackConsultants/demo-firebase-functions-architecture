@@ -1,133 +1,23 @@
 @import "../../../styles.scss";
 
-/* ----------- landscape ----------- */
-@media screen and (orientation: landscape) {
-    ::ng-deep app-home {
-        display: block;
-        height: 100%;
-        width: 100%;
-        color: white;
-    }
-
-    .home-container {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .search-input {
-        @include round-corner-container;
-        width: 100%;
-        height: 36px;
-        border: none;
-        background-color: white;
-        color: black;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 17px;
-    }
-
-    .commands {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .navigate-buttons {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 35px;
-        background-color: transparent;
-        color: $bodyColor;
-        width: 195px;
-        @include border-none;
-        @include app-font;
-
-        img {
-            width: 160px;
-            height: 160px;
-            // Remove absolute positioning as flexbox will handle centering
-            // position: absolute;
-            // bottom: 10px;
-            // left: 0px;
-        }
-
-        div { // Assuming this is the .label div
-            // Adjust positioning if needed, or let flexbox handle it
-            // position: absolute;
-            // bottom: 10px;
-            // left: 0px;
-            width: 100%;
-            text-align: center; // Center text within the div
-        }
-    }
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
 }
-/* ----------- portrait ----------- */
-@media screen and (orientation: portrait) {
-    ::ng-deep app-home {
-        display: block;
-        height: 100%;
-        width: 100%;
-        color: white;
-    }
 
-    .home-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
+.commands {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-    .commands {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .search-input {
-        @include round-corner-container;
-        width: 100%;
-        height: 36px;
-        border: none;
-        background-color: white;
-        color: black;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 17px;
-    }
-
-    .navigate-buttons {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 35px;
-        background-color: transparent;
-        color: $bodyColor;
-        width: 195px;
-        @include border-none;
-        @include app-font;
-
-        img {
-            grid-row: 1/2;
-            grid-column: 1/2;
-            justify-self: center; // Center horizontally within the grid cell
-            align-self: center; // Center vertically within the grid cell
-        }
-
-        .label {
-            grid-row: 2/3;
-            grid-column: 1/2;
-            width: 100%;
-            text-align: center;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-
-        .icon {
-            height: 160px;
-        }
-    }
+button {
+    background-color: rgb(120, 120, 22);
+    height: 77px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
 }

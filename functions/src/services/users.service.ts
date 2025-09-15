@@ -1,27 +1,37 @@
+import { firestore } from "../db";
+
 export type User = { id: string; email: string; name: string };
-const db: Record<string, User> = {};
+
+const collection = firestore.collection("users");
 
 export const UsersService = {
-  list(): User[] {
-    return Object.values(db);
+  async list(): Promise<User[]> {
+    const snap = await collection.get();
+    return snap.docs.map(d => ({ id: d.id, ...(d.data() as Omit<User, "id">) }));
   },
-  get(id: string): User | undefined {
-    return db[id];
+  async get(id: string): Promise<User | undefined> {
+    const doc = await collection.doc(id).get();
+    if (!doc.exists) return undefined;
+    return { id: doc.id, ...(doc.data() as Omit<User, "id">) };
   },
-  create(data: Omit<User, "id">): User {
-    const id = crypto.randomUUID();
-    const user = { id, ...data };
-    db[id] = user;
-    return user;
+  async create(data: Omit<User, "id">): Promise<User> {
+    const ref = await collection.add(data);
+    const doc = await ref.get();
+    return { id: doc.id, ...(doc.data() as Omit<User, "id">) };
   },
-  update(id: string, data: Partial<Omit<User, "id">>): User | undefined {
-    if (!db[id]) return undefined;
-    db[id] = { ...db[id], ...data };
-    return db[id];
+  async update(id: string, data: Partial<Omit<User, "id">>): Promise<User | undefined> {
+    const ref = collection.doc(id);
+    const exists = await ref.get();
+    if (!exists.exists) return undefined;
+    await ref.set(data, { merge: true });
+    const updated = await ref.get();
+    return { id: updated.id, ...(updated.data() as Omit<User, "id">) };
   },
-  remove(id: string): boolean {
-    if (!db[id]) return false;
-    delete db[id];
+  async remove(id: string): Promise<boolean> {
+    const ref = collection.doc(id);
+    const doc = await ref.get();
+    if (!doc.exists) return false;
+    await ref.delete();
     return true;
   }
 };
